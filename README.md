@@ -16,9 +16,13 @@ Key Features:
 🛠️ Tech Stack
 
 Language: Python 3.10+
+
 Data Manipulation: Pandas, NumPy
+
 Database Engine: MySQL Workbench
+
 Database Connector: SQLAlchemy, PyMySQL
+
 Automation: Logging, Try-Except error handling
 
 
