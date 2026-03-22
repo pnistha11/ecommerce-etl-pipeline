@@ -26,16 +26,24 @@ Database Connector: SQLAlchemy, PyMySQL
 Automation: Logging, Try-Except error handling
 
 
+
 📁 Project Structure
 
 ecommerce_etl/
 │
+
 ├── data/                  # Source CSV files (Kaggle Superstore)
+
 │   └── superstore.csv
+
 ├── logs/                  # Automated pipeline execution logs
+
 │   └── etl_pipeline.log
+
 ├── etl_main.py            # Main Python ETL logic
+
 └── README.md              # Project documentation
+
 
 
 🧠 Challenges & Solutions
