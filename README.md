@@ -3,17 +3,18 @@ An end-to-end Data Engineering pipeline designed to automate the Extraction, Tra
 
 
 🚀 Project Overview
-The goal of this pipeline is to take raw CSV data (Global Superstore Sales), perform complex cleaning and feature engineering, and load it into a structured MySQL database for analytical use.
+- The goal of this pipeline is to take raw CSV data (Global Superstore Sales), perform complex cleaning and feature engineering, and load it into a structured MySQL database for analytical use.
 Key Features:
-Robust Extraction: Handles various file encodings (ISO-8859-1) and potential file-read errors.
-Defensive Transformation: Cleans column headers (lowercasing, stripping spaces) and handles missing columns (like postal_code) dynamically.
-International Date Support: Correctly parses DD/MM/YYYY formats to prevent data corruption.
-Incremental Loading: Checks the database for the last loaded record to avoid duplicate entries and save processing time.
-Production Logging: Maintains a detailed audit trail in logs/etl_pipeline.log.
-Data Validation: Post-load checks to ensure row counts and data integrity.
+- Robust Extraction: Handles various file encodings (ISO-8859-1) and potential file-read errors.
+- Defensive Transformation: Cleans column headers (lowercasing, stripping spaces) and handles missing columns (like postal_code) dynamically.
+- International Date Support: Correctly parses DD/MM/YYYY formats to prevent data corruption.
+- Incremental Loading: Checks the database for the last loaded record to avoid duplicate entries and save processing time.
+- Production Logging: Maintains a detailed audit trail in logs/etl_pipeline.log.
+- Data Validation: Post-load checks to ensure row counts and data integrity.
 
 
 🛠️ Tech Stack
+
 Language: Python 3.10+
 Data Manipulation: Pandas, NumPy
 Database Engine: MySQL Workbench
@@ -22,6 +23,7 @@ Automation: Logging, Try-Except error handling
 
 
 📁 Project Structure
+
 ecommerce_etl/
 │
 ├── data/                  # Source CSV files (Kaggle Superstore)
